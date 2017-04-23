@@ -1,0 +1,499 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/op_fun_panelkey"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/modeImageButton_panelkey"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/mode_btn_hot"
+            android:paddingTop="80dp"
+            android:text="@string/factory_KeyName_mode"
+            android:textColor="@color/selector_color_state"
+            android:textSize="@dimen/textsize_m" />
+
+        <Button
+            android:id="@+id/controlImageButton_panelkey"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/control_btn_not"
+            android:paddingTop="80dp"
+            android:text="@string/factory_KeyName_control"
+            android:textColor="@color/selector_color_state"
+            android:textSize="@dimen/textsize_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/show_panelkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/factory_fragment_title"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/textsize_m" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/longpress_panelkey"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_notpress"
+                android:text="@string/factory_KeyName_shortpress"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/textsize_l" />
+
+            <Button
+                android:id="@+id/start_panelkey"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_notpress"
+                android:text="@string/factory_KeyName_start"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/textsize_l" />
+
+            <Button
+                android:id="@+id/reset_panelkey"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_notpress"
+                android:text="@string/factory_KeyName_reset"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/textsize_l" />
+
+            <Button
+                android:id="@+id/quit_panelkey"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_notpress"
+                android:text="@string/factory_KeyName_quilt"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/textsize_l" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/modeBtnLayout_panelkey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/mainActivity_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_main_activity"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/back_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_back"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/model_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_mode"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/band_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_band"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/sound_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_sound"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/navigation_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_navigation"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                	android:id="@+id/dvd_panelkey"
+                	android:layout_width="wrap_content"
+               	 	android:layout_height="match_parent"
+                	android:layout_marginRight="4dp"
+                	android:layout_weight="1"
+                	android:background="@drawable/keyname_btn_nor"
+                	android:text="@string/factory_KeyName_dvd"
+                	android:textColor="@color/textcolor"
+                	android:textSize="@dimen/textsize_m" />
+                
+                <Button
+                    android:id="@+id/music_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_music"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/video_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_video"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/television_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_television"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+               
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bluetoothphone_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_bluetooth_phone"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+                
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_light"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+                
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_light"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_light"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_light"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/controlBtnLayout_panelkey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/shutdown_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_power"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/auto_scan_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_auto_scan"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/browse_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_browse"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/play_or_stop_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_play_or_stop"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+                
+                <Button
+                    android:id="@+id/decrease_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_decrease"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/increase_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_increase"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+                
+                <Button
+                	android:id="@+id/out_panelkey"
+                	android:layout_width="wrap_content"
+                	android:layout_height="match_parent"
+                	android:layout_marginRight="4dp"
+                	android:layout_weight="1"
+                	android:background="@drawable/keyname_btn_nor"
+                	android:text="@string/factory_KeyName_out"
+                	android:textColor="@color/textcolor"
+                	android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/previous_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_previous"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/next_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_next"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/hang_up_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_hang_up"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/balance_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_balance"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/mute_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_mute"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+
+                <Button
+                    android:id="@+id/off_screen_panelkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_off_screen"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+                
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_light"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/keyname_btn_nor"
+                    android:text="@string/factory_KeyName_light"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/textsize_m" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

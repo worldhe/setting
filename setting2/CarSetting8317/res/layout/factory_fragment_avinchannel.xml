@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:carsetting="http://schemas.android.com/apk/res/com.yecon.carsetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:padding="@dimen/fragment_padding" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		<com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_avin1_video_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_avin1_video_channel" />
+		<com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_avin1_audio_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_avin1_audio_channel" />
+		<com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_avin2_video_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_avin2_video_channel" />
+		<com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_avin2_audio_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_avin2_audio_channel" />
+        <com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_tv_video_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_tv_video_channel" />
+		<com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_tv_audio_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_tv_audio_channel" />
+		<com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_dvr_video_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_dvr_video_channel" />
+		<com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_camera_video_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_camera_video_channel" />
+		<com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_fm_audio_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_fm_audio_channel" />
+		<com.yecon.carsetting.view.HeaderLayout
+            android:id="@+id/factory_ipod_audio_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            carsetting:item_style="1"
+            carsetting:item_subTitle="@string/factory_avin_ipod_audio_channel" />
+ 
+    </LinearLayout>
+
+</ScrollView>

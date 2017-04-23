@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:carsetting="http://schemas.android.com/apk/res/com.yecon.carsetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.yecon.carsetting.view.ColorPlates
+        android:id="@+id/color_plates"
+        android:layout_width="@dimen/color_bg_width"
+        android:layout_height="@dimen/color_bg_width"
+        android:background="@drawable/color_bk"
+        carsetting:circle_radius="50"
+        carsetting:ring_width="4" />
+
+</LinearLayout>
